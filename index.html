@@ -1,682 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Anubhooti Solutions</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-    
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
- <style>
-  .bg-1 { 
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
   }
   </style>
 </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<body id="page-top" class="index">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" >
-        <div class="container" >
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                
-                 <img class="img-responsive" src="img/header.png" alt="" height="300">
-            </div>
- 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">works</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                   
-                    <li class="page-scroll">
-                        <a href="https://tanjilapathan1234.wixsite.com/anubhootisolutions/about">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+<div class="jumbotron text-center">
+  <h1>Company</h1> 
+  <p>We specialize in blablabla</p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Anubhooti Solutions</span>
-                        <hr class="star-light">
-                        <span class="skills">“Anubhooti solutions” is  in working in the area of speech processing. Dr. Shaila D. Apte is a proprietor of the firm.</span>
-                          <span class="skills">Projects completed: POC for natural sounding emotional speech synthesis in English using phoneme concatenation and with minimal recording form the layman.</span>
-                          <span class="skills">Projects working on: Emotion recognition useful for call centers, Natural sounding and emotional speech synthesis in Marathi and Hindi with minimal recording from the speaker, Speaker authentication using optimal mother wavelet, Speech enhancement using conjugate property of DFT and wavelet Transform, Speech disorder classification.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <!--<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
-                    </a>-->
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <!--<a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>-->
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Dr. Mrs. S. D. Apte completed her ME and Ph. D (Electronics Engineering) from Walchand College of Engineering, Sangli. She has professional experience of 35 years. She worked in Walchand College of Engineering for 27 years and currently working as a Professor for PG in Rajarshi Shahu College of Engineering, Pune. She has two Patents to her credit related to generation of mother wavelet from speech signal and emotional speech synthesis using modification of pitch contour and LPCs. She has published 40 research papers in reputed International journals and over 40 papers in International conferences. Eight candidates have completed Ph.D. under her guidance ad she is currently guiding 5 Ph.D. students in Pune University.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>She is currently working as a reviewer for International Journal of Speech Technology, Springer Publication and International Journal on Signal Processing, Elesevier Publication. Books titled “Digital Signal Processing”, “Speech and Audio Processing” and “Advanced Digital Signal Processing” is published by Wiley India Publication. “Signals and Systems, principles and applications” is recently published by Cambridge University press. “Random Signal Processing” title will be published by CRC press, Taylor and Francis series. Her research areas include speaker verification, speech recognition, speech synthesis, speech enhancement, watermarking of speech and music signals, handwritten character recognition etc. </p>
-                </div>
-                <!--<div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Resume
-                    </a>
-                </div>-->
-            </div>
-        </div>
-    </section>
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Company Address
-                            <br>Pune, Maharashtra - 411021
-                        <br/>info@anubhootisolutions.com</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Anubhooti Solutions</h3>
-                        <p>Anubhooti Solutions is a software development company created to collaborate on Cloud and Mobile Technologies. Visit <a href="http://www.anubhootisolutions.com">Anubhooti Solutions</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Anubhooti Solutions 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
     </div>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Publications</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                           
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
-                            <style type="text/css">
-                                table.tableizer-table {
-                                    font-size: 12px;
-                                    border: 1px solid #CCC;
-                                    font-family: Arial, Helvetica, sans-serif;
-                                }
-
-                                .tableizer-table td {
-                                    padding: 4px;
-                                    margin: 3px;
-                                    border: 1px solid #CCC;
-                                }
-
-                                .tableizer-table th {
-                                    background-color: #104E8B;
-                                    color: #FFF;
-                                    font-weight: bold;
-                                }
-                            </style>
-                            <table class="tableizer-table">
-                                <thead><tr class="tableizer-firstrow"><th>Sr.</th><th>Title of paper</th><th>Author</th><th>Name of Journal/</th><th>Year</th></tr></thead>
-                                <tbody>
-                                    <tr><td>No.</td><td>&nbsp;</td><td>&nbsp;</td><td>Proceeding</td><td>&nbsp;</td></tr>
-                                    <tr><td>1</td><td>Innovative Wavelet based Speech Processing Model using pitch Synchronous Wavelet Transform</td><td>Dr.(Mrs.) S.D. Apte</td><td>International Journal of Speech technology, Springler Publication</td><td>Feb. 2009</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>2</td><td>Robust Authentication of Music with Sprinkled Watermarklets using Haar Wavelet</td><td>Dr. (Mrs.) S. D. Apte</td><td>International journal of computer, mathematical sciences and applications, Serials Publications, New Delhi. </td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Vol.1, No. 2-4 April-Dec 2007</td></tr>
-                                    <tr><td>3</td><td>Computational Model to Predict Optimized Fibre Properties for Required Yarn</td><td>Dr. (Mrs.) S. D. Apte & Mrs. L. S. Admuthe</td><td>International Journal of Applied Artificial Intelligence in Engineering System</td><td>Selected for Publication</td></tr>
-                                    <tr><td>4</td><td>SNR based spread spectrum watermarking using DWT and lifted wavelet transform</td><td>Dr. (Mrs.) S. D. Apte & Mrs. Meenakshi Patil</td><td>International Journal of Cryptography and security</td><td>Vol. 1. No.2 Oct. 2008</td></tr>
-                                    <tr><td>5</td><td>Optimization of Spinning process using hybrid approach involving ANN, GA and linear programming</td><td>Dr.(Mrs.) S. D. Apte & Mrs. Admuthe</td><td>Research India publications</td><td>Vol.1, No.3, 2008. </td></tr>
-                                    <tr><td>6</td><td>Adaptive spread spectrum  audio watermarking by low frequency modification" </td><td>Dr. Mrs. S. D. Apte & Mrs. Meenakhi Patil</td><td>Submitted to EURASIP</td><td>Selected for publication-</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>7</td><td>Optimization of Spinning Process Using Hybrid Approach Involving ANN, GA and Linear Programming reverse engineering approach.</td><td>Dr.(Mrs.) S. D. Apte & Mrs. Admuthe</td><td>Advances in Computational Sciences and Technology</td><td>Vol.1, issue 3 2008</td></tr>
-                                    <tr><td>8</td><td>Computational Model to Predict Optimized Fibre Properties for Required Yarn</td><td>Dr.(Mrs.) S. D. Apte & Mrs. Admuthe</td><td>International Journal of Artificial Intelligence and Computational Research (IJAICR)</td><td>June.2009</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>9</td><td>Neuro Genetic  Cost Optimization Model:Aplication of TEXTILE Spinning Process"</td><td>Dr.(Mrs.) S. D. Apte & Mrs. Admuthe</td><td>International Journal of Computer theory and  </td><td>Oct-09</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Engineering</td><td>&nbsp;</td></tr>
-                                    <tr><td>10</td><td>Modeling and Optimization of Spinning Process using Artificial Neural Network and Genetic Algorithm</td><td>Dr.(Mrs.) S. D. Apte & Mrs. Admuthe</td><td>IJAST  Koria</td><td>Dec.2009</td></tr>
-                                    <tr><td>11</td><td>ANFIS with subtractive clustering" fiber to  Yarn module.</td><td>Dr.(Mrs.) S. D. Apte & Mrs. Admuthe</td><td>Textile Research Journal</td><td>Selected for publication</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>12</td><td>Adaptive Spread spectrum audio watermarking</td><td>Dr. (Mrs.) S. D. Apte & Mrs. Meenakshi Patil</td><td>ICFAI Journal on Information technology </td><td>September 2009.</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>13</td><td>Speech Enhancement in Hearing Aids using Conjugate Symmetry Property of Short Time</td><td>Dr. Mrs. S. D. Apte & Mr. Shridhar</td><td>International Journal of Recent Trends in Engineering, Academy publishers, Finland, Nov 2009, Vol 2, No 1-6, pp 346-351</td><td>Nov.2009</td></tr>
-                                    <tr><td>&nbsp;</td><td>   Fourier Transform</td><td>&nbsp;</td><td>ISSN-0975 - 8887</td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>14</td><td>Speech Enhancement in Hearing Aids Using Conjugate Symmetry of DFT and SNR-Perception Models</td><td>Dr. Mrs. S. D. Apte & Dr. Shridhar</td><td>International Journal of Computer Applications (0975 - 8887)</td><td>2010</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Volume 1 - No. 21</td><td>ISSN-0975-8887</td></tr>
-                                    <tr><td>15</td><td>Speech enhancement using conjugate symmetry of DFT</td><td>Dr. Mrs. S. D. Apte & Mr. Shridhar</td><td>International Journal of Futurestic Computer Applications</td><td>25th Feb2010</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ISSN-0975 - 8887</td><td>&nbsp;</td></tr>
-                                    <tr><td>16</td><td>A Multistage Classification and Kernel-Based Recognition Scheme for Handwritten Marathi Compound Characters</td><td>Sushama D. Shelke and Dr. Shaila D. Apte</td><td>Coimbatore Institute of  Information Technology International Journal</td><td>:July 2011</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ISSN 0974 - 9586</td><td>&nbsp;</td></tr>
-                                    <tr><td>17</td><td>An Efficient Speech Enhancement Algorithm Using</td><td>Dr. Mrs. S. D. Apte & Mr. Shridhar</td><td>springerlink.com © Springer-Verlag Berlin Heidelberg </td><td>2011</td></tr>
-                                    <tr><td>&nbsp;</td><td>Conjugate Symmetry of DFT</td><td>&nbsp;</td><td>Electrical Engg and control Journal</td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>DOI: 10.1007/978-3-642-21765-4_87 </td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>18</td><td>Innovative wavelet packet based algorithm for texture identification for textile industry</td><td>Dr. Mrs. S. D. Apte</td><td>International journal on computer engineering and information technology</td><td>Feb. 2010</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>Mrs. Rane C. V. </td><td>Vol. 16, No.21,ISSN 0974-2034</td><td>&nbsp;</td></tr>
-                                    <tr><td>19</td><td>A Multistage Handwritten Marathi Compound Character Recognition</td><td>Dr. Mrs. S. D. Apte & Mrs. Sushama Shelke</td><td>International Journal of Signal Processing, Image Processing and Pattern Recognition</td><td>Mar. 2011</td></tr>
-                                    <tr><td>&nbsp;</td><td>Scheme using Neural Networks and Wavelet Features </td><td>&nbsp;</td><td>Vol. 4, No. 1, March 2011</td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ISSN: 2005-4254 </td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>20</td><td>Multistage Handwritten Marathi Compound Character Recognition Using Neural Network</td><td>Dr. Mrs. S. D. Apte & Mrs. Sushama Shelke</td><td>Journal of Pattern Recognition Research</td><td>Jul-11</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Vol. 6, no.2 </td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ISSN 1558-884X</td><td>&nbsp;</td></tr>
-                                    <tr><td>21</td><td>Pitch and duration modification for speech watermarking </td><td>Dr. Mrs. S.. . Apte</td><td>JoREST-International Journal of Research in ..., 2011</td><td>2011</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>Mrs.     Dahibhate</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>22</td><td>Emotion Detection Using Wavelet Packet Transform</td><td>Dr. Mrs. S.. . Apte</td><td>International Journal of Electronics Circuits And Switching</td><td>Feb. 2012</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>Mrs. Varsha Degaokar</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>23</td><td>Emotion detection from speech using wavelet packet transform</td><td>Dr. Mrs. S. D. Apte Varsha Degaokar</td><td>International journal of speech technology, Springer publication</td><td>Selected for publication</td></tr>
-                                    <tr><td>24</td><td>Piano note synthesis using LPC and wavelet transform</td><td>Dr. Mrs. S. D. Apte</td><td>CiiT International Journal of Digital Signal Processing</td><td>Aug. 2011</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>Mrs. Vidya Pawar</td><td>&nbsp;</td><td>ISSN 0974 - 9705 & Online: ISSN 0974 - 9594</td></tr>
-                                    <tr><td>25</td><td>Voice Controlled Robot using Open Source Hardware Platform Beagleboard</td><td>Dr. Mrs. S. D. Apte</td><td>International Journal of Recent trends in Engineering and Technology vol. 4. No. 4. .DOI 0104:04:218</td><td>Nov. 2010</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>Mr.Sangameshwar  Kendre</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>26</td><td>Drusen detection using texture features</td><td>Dr. Mrs. S. D. Apte Mrs. C. V. Rane</td><td>International Journal of Advances in Management Technology & Engg. Sciences, ISSN 2249-7455, Vol. 1, Issue 2, Nov 2011</td><td>Nov. 2011</td></tr>
-                                    <tr><td>27</td><td>" A Novel Approach For Troubleshooting Microprocessor Based System Using An Object oriented Expert System</td><td>Dr. Mrs. S. D. Apte & Mr. Kodavade</td><td>" International Journal of Advanced Computer Science & Applications , Published by  The Science & Information Organization ,USA.</td><td>. ISSN: 2158-107X, Vol .3.No.5. May 2012.</td></tr>
-                                    <tr><td>28</td><td>Fault Diagnosis In Microcontroller Based systems Using  An Object Oriented Expert System"</td><td>Dr. Mrs. S. D. Apte & Mr. Kodavade</td><td>International Journal of Advanced Research in Artificial Intelligence ( IJARAI) , Published by The Science & Information Organization, USA</td><td>. ISSN:  2165-4050, Vol.3.No.4. July 2012           </td></tr>
-                                    <tr><td>29</td><td>" Intelligent  Object Oriented Frame Work  For Fault Diagnosis in Microprocessor Boards</td><td>Dr. Mrs. S. D. Apte & Mr. Kodavade</td><td>International Journal of Applied Research on Information Technology and Computing, Published by IndainJournals.com</td><td>ISSN: 0975-8070, August 2012 in press</td></tr>
-                                    <tr><td>30</td><td>A Universal  Object Oriented Expert System For Fault Diagnosis</td><td>Dr. Mrs. S. D. Apte & Mr. Kodavade</td><td>" International Journal on Intelligence Sciences( IJIS) , Published b y Scientific Research Publications, USA</td><td>.ISSN :2163-0283,</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>July, 2012 Issue ( In Press) .</td></tr>
-                                    <tr><td>31</td><td>Demoralizing images with motion blur</td><td>Dr. Mrs. S. D. Apte &  Mosami Bhajinhakare</td><td>Journal of Medical Imaging and</td><td>Apr-12</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Health Informatics</td><td>ISSN 2156-7018</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Vol. 2, No. 4 1-5, 2012</td><td>&nbsp;</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>American Scientific Publishers</td><td>&nbsp;</td></tr>
-                                    <tr><td>32</td><td>Speech Evaluation with Special Focus on</td><td>Dr. M.R. Dixit</td><td>International Journal of Application or Innovation in Engineering & Management (IJAIEM)</td><td>Jun-13</td></tr>
-                                    <tr><td>&nbsp;</td><td>Children Suffering from Problems</td><td>Dr. Mrs. S. D. Apte</td><td>Volume 2, Issue 6, June 2013 </td><td>ISSN 2319 - 4847</td></tr>
-                                    <tr><td>&nbsp;</td><td>of Vocal Tract</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>33</td><td>Troubleshooting Microprocessor based system using an object oriented expert system</td><td>Dr. Mrs. S. D. Apte & Dr. Kodavade D. V.</td><td>International journal of advanced computer science and applications</td><td>2011</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Vol.3 No.5</td><td>&nbsp;</td></tr>
-                                    <tr><td>34</td><td>Multistage ink width independent writer verification using chain code methods</td><td>Dr. Mrs. S. D. Apte & Ms. Sharada Kore</td><td>i-manager's journal of pattern recognition</td><td>Vol. 1 No.3, Sep-Nov 2014</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ISSN-2349-7912</td></tr>
-                                    <tr><td>35</td><td>Comparison of spatial domain features for writer recognition under different ink width conditions</td><td>Dr. Mrs. S. D. Apte & Ms. Sharada Kore</td><td>i-manager's journal of pattern recognition</td><td>Vol. 2 No.1, Sep-March-May 2015</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>ISSN-2349-7912</td></tr>
-                                </tbody>
-                            </table>
-
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Research Work</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <style type="text/css">
-                                table.tableizer-table {
-                                    font-size: 12px;
-                                    border: 1px solid #CCC;
-                                    font-family: Arial, Helvetica, sans-serif;
-                                }
-
-                                .tableizer-table td {
-                                    padding: 4px;
-                                    margin: 3px;
-                                    border: 1px solid #CCC;
-                                }
-
-                                .tableizer-table th {
-                                    background-color: #104E8B;
-                                    color: #FFF;
-                                    font-weight: bold;
-                                }
-                            </style>
-                            <table class="tableizer-table">
-                                <thead><tr class="tableizer-firstrow"><th>Funding Agency</th><th>ARDE, New Delhi</th></tr></thead>
-                                <tbody>
-                                    <tr><td>Scheme Details</td><td>------</td></tr>
-                                    <tr><td>Name </td><td>DSP Design for FMCW RADAR</td></tr>
-                                    <tr><td>File No. & Year</td><td>2000-2001</td></tr>
-                                    <tr><td>Amount</td><td>Rs. 4.10 Lacs</td></tr>
-                                    <tr><td>Brief Summary</td><td>The RADAR return signal is analyzed using FFT techniques and rough range and velocity measurement for the target is carried out. The system is shown to be robust against noise. The system is implemented on the evaluation module of TMS 320C243.</td></tr>
-                                </tbody>
-                            </table>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Books</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <style type="text/css">
-                                table.tableizer-table {
-                                    font-size: 12px;
-                                    border: 1px solid #CCC;
-                                    font-family: Arial, Helvetica, sans-serif;
-                                }
-
-                                .tableizer-table td {
-                                    padding: 4px;
-                                    margin: 3px;
-                                    border: 1px solid #CCC;
-                                }
-
-                                .tableizer-table th {
-                                    background-color: #104E8B;
-                                    color: #FFF;
-                                    font-weight: bold;
-                                }
-                            </style>
-                            <table class="tableizer-table">
-                                <thead><tr class="tableizer-firstrow"><th>Publisher</th><th>Year of publication</th><th>Title of the book</th></tr></thead>
-                                <tbody>
-                                    <tr><td>Wiley India Publication</td><td>Dec.2008</td><td>Digital Signal Processing- First edition</td></tr>
-                                    <tr><td>Wiley India Publication</td><td>Nov. 2009</td><td>Digital Signal Processing- Second  edition</td></tr>
-                                    <tr><td>Wiley India Publication</td><td>Feb. 2012</td><td>Speech and Audio Processing</td></tr>
-                                    <tr><td>Wiley India Publication</td><td>Jul-13</td><td>Advanced Digital Signal Processing</td></tr>
-                                    <tr><td>Cambridge University Press</td><td>Dec. 2015</td><td>Signals and Systems- Principles and Applications</td></tr>
-                                    <tr><td>CRC press, Taylor and Francis Series </td><td>Proposal submitted</td><td>                       Random Signal Processing</td></tr>
-                                </tbody>
-                            </table>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Ph.D. Registrations</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <style type="text/css">
-                                table.tableizer-table {
-                                    font-size: 12px;
-                                    border: 1px solid #CCC;
-                                    font-family: Arial, Helvetica, sans-serif;
-                                }
-
-                                .tableizer-table td {
-                                    padding: 4px;
-                                    margin: 3px;
-                                    border: 1px solid #CCC;
-                                }
-
-                                .tableizer-table th {
-                                    background-color: #104E8B;
-                                    color: #FFF;
-                                    font-weight: bold;
-                                }
-                            </style>
-                            <table class="tableizer-table">
-                                <thead><tr class="tableizer-firstrow"><th>Sr.</th><th>Title of work</th><th>Name of the candidate</th><th>University</th><th>Year of Registration</th></tr></thead>
-                                <tbody>
-                                    <tr><td>No.</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                                    <tr><td>1</td><td>Hearing Aids</td><td>Mr. Shridhar</td><td>Shivaji</td><td>Completed</td></tr>
-                                    <tr><td>2</td><td>Intelligent Encoder Decoder Model for Robust & Secure Audio Watermarking.</td><td> Mrs. Meenakshi Patil</td><td>Shivaji</td><td>Completed</td></tr>
-                                    <tr><td>3</td><td>Development of Efficient Routing Protocol for Application Specific Wireless Sensor Networks </td><td> Mr. V. V. Sulakhe</td><td>Shivaji</td><td>Submitted </td></tr>
-                                    <tr><td>4</td><td>A Neural Network Based Handwritten Character Recognition for Marathi Script.</td><td>Mrs. Sushama Shelke</td><td>Shivaji</td><td>Completed</td></tr>
-                                    <tr><td>5</td><td>A Generalized Framework for Speech Enhancement & Recognition with Special Focus on Patients With Speech Disorder.</td><td>Mrs.  Manali Dixit</td><td>Shivaji</td><td>Completed</td></tr>
-                                    <tr><td>6</td><td>An Intelligent Optimization Model for Cotton Mixing During Yarn Spinning</td><td> Mrs. L.S. Admuthe</td><td>Shivaji</td><td>Completed</td></tr>
-                                    <tr><td>7</td><td>Design, Development & Analysis of Concurrent Object Oriented Fault Diagnostic System for Microprocessor Configuration.</td><td> Mr. D.V. Kodavade</td><td>&nbsp;</td><td>Competed</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Shivaji</td><td>&nbsp;</td></tr>
-                                    <tr><td>8</td><td>Ink width independent Writer Verification ( Bharati Vidyapeeth Pune)</td><td>Ms. Sharada Kore</td><td>&nbsp;</td><td>Submited</td></tr>
-                                    <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Bharati Vidyapeeth</td><td>&nbsp;</td></tr>
-                                    <tr><td>9</td><td>Performance improvement of reconfigurable Microstrip Antenna with polarization diversity and radiation pattern selectivity</td><td>Mrs. Prachi Vast</td><td>Pune</td><td>Aug. 2011</td></tr>
-                                    <tr><td>10</td><td>Multistage and multiclass approach for decease identification using MRI </td><td>Mr. Tirmare </td><td>Pune</td><td>Aug. 2011</td></tr>
-                                    <tr><td>11</td><td>Audio and Video processing</td><td>Mr. Pratap Sanap</td><td>Pune</td><td>Aug. 2014</td></tr>
-                                    <tr><td>12</td><td>Musical Instrument Modeling</td><td>Mrs. Meenakhi Atre</td><td>Pune</td><td>Aug. 2015</td></tr>
-                                </tbody>
-                            </table>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
         </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
     </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
